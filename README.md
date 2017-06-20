@@ -6,7 +6,7 @@ Used:
 Wildfly server.
 Database  mysql named derby_sample_mod.
 
-At generated web app with Primefaces Crud Gennerator i have added functionality to  select a Theme at runtime to change the look of Web app.
+At generated web app with Primefaces Crud Generator i have added functionality to  select a Theme at runtime to change the look of Web app.
 
 So i added at web.xml the following context-param:
 
@@ -52,8 +52,9 @@ The  columnClasses="column ui-widget-header" resolved the problem.
 
 
 Important: for run the netbeans project, resolve the  dependencies: 
-from project right click and select properties/lib
-into libs add the primefaces-6.1.jar and all-themes-1.0.10.jar (download from primefaces web site).
+from project right click and select properties/lib.
+
+Into libs add the primefaces-6.1.jar and all-themes-1.0.10.jar (download from primefaces web site).
 
 For the persistence, control the  <jta-data-sorce> name if your db is configurated  into wildfly
  with same name:
